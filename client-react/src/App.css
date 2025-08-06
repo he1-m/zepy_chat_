@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* 💡 Safe, dynamic height fix */
+:root {
+  --vh: 1vh;
+}
+
+.App {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-padding {
+  height: env(safe-area-inset-bottom);
+  height: constant(safe-area-inset-bottom);
+  background-color: transparent;
+}
+
+.cometchat-root {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.messages-wrapper {
+  height: calc(var(--vh, 1vh) * 100);
+  padding-bottom: env(safe-area-inset-bottom);
+}
