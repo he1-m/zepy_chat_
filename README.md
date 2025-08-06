@@ -62,6 +62,6 @@ Frontend deployed on Render
 
 
 📧 Contact
-Developer: Aneek Shah
-📫 Email: aneekshh@gmail.com
+Developer: hemant Joshi
+📫 Email: joshihemant1259@gmail.com
 
